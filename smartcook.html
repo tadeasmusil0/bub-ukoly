@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Smartcook - Recepty</title>
+</head>
+<body>
+    <header>
+        <h1>Smartcook Recepty</h1>
+    </header>
+
+    <main>
+        <div class="filters">
+            <label for="category">Kategorie:</label>
+            <select id="category">
+                <option value="all">Všechny</option>
+                <option value="breakfast">Snídaně</option>
+                <option value="lunch">Oběd</option>
+                <option value="dinner">Večeře</option>
+            </select>
+
+            <label for="sort">Řadit podle:</label>
+            <select id="sort">
+                <option value="name">Název</option>
+                <option value="date">Datum přidání</option>
+            </select>
+        </div>
+
+        <div class="recipes" id="recipes">
+            <!-- Recepty budou zobrazeny zde -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smartcook</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
