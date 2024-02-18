@@ -3,40 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCook</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Smartcook - Recepty</title>
 </head>
 <body>
     <header>
-        <h1>Smartcook Recepty</h1>
+        <div class="logo">SmartCook</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <div class="filters">
-            <label for="category">Kategorie:</label>
-            <select id="category">
-                <option value="all">Všechny</option>
-                <option value="breakfast">Snídaně</option>
-                <option value="lunch">Oběd</option>
-                <option value="dinner">Večeře</option>
+            <label for="cuisine">Cuisine:</label>
+            <select id="cuisine">
+                <option value="all">All</option>
+                <option value="italian">Italian</option>
+                <option value="asian">Asian</option>
+                <!-- Add more options as needed -->
             </select>
 
-            <label for="sort">Řadit podle:</label>
-            <select id="sort">
-                <option value="name">Název</option>
-                <option value="date">Datum přidání</option>
+            <label for="time">Preparation Time:</label>
+            <select id="time">
+                <option value="all">All</option>
+                <option value="short">Short</option>
+                <option value="medium">Medium</option>
+                <!-- Add more options as needed -->
             </select>
         </div>
-
-        <div class="recipes" id="recipes">
-            <!-- Recepty budou zobrazeny zde -->
+        
+        <div class="recipes">
+            <div class="recipe">
+                <h3>Pasta Carbonara</h3>
+                <p>Kitchen: Italian</p>
+                <p>Preparation Time: Short</p>
+                <p>Description: Creamy pasta dish with bacon and Parmesan cheese.</p>
+            </div>
+            <div class="recipe">
+                <h3>Sushi Rolls</h3>
+                <p>Kitchen: Asian</p>
+                <p>Preparation Time: Medium</p>
+                <p>Description: Traditional Japanese sushi rolls with rice, fish, and vegetables.</p>
+            </div>
+            <div class="recipe">
+                <h3>Chicken Parmesan</h3>
+                <p>Kitchen: Italian</p>
+                <p>Preparation Time: Medium</p>
+                <p>Description: Breaded chicken breasts topped with marinara sauce and melted cheese.</p>
+            </div>
+            <div class="recipe">
+                <h3>Pad Thai</h3>
+                <p>Kitchen: Asian</p>
+                <p>Preparation Time: Medium</p>
+                <p>Description: Stir-fried rice noodles with shrimp, tofu, peanuts, and vegetables.</p>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Smartcook</p>
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: info@smartcook.com</p>
+            <p>Phone: +123456789</p>
+        </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
